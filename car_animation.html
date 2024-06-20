@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .all {
+            background-image: url("assets/bg.jpg");
+            height: 900px;
+            width: 1885px;
+            background-size: 100% 100%;
+            position: relative;
+            margin-top: -70px;
+        }
+
+        .common {
+
+            height: 155px;
+            width: 155px;
+            position: absolute;
+            background-size: 100% 100%;
+        }
+
+        .car1 {
+            top: 44px;
+            animation-name: right;
+            animation-duration: 7s; 
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in;
+        }
+
+        .car2 {
+            top: 118px;
+            animation-name: wrong;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: initial;
+        }
+
+        .car3 {
+            top: 235px;
+            animation-name: right;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: initial;
+        }
+
+        .car4 {
+            top: 294px;
+            animation-name: wrong;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+
+        .car5 {
+            top: 427px;
+            animation-name: right;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;            
+            animation-timing-function:initial;
+        }
+
+        .car6 {
+            top: 497px;
+            animation-name: wrong;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-out;
+        }
+
+        .car7 {
+            top: 617px;
+            animation-name: right;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-out;
+        }
+
+        .car8 {
+            top: 681px;
+            animation-name: wrong;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in;
+        }
+
+        @keyframes right {
+            0% {
+                transform: translateX(-500px);
+
+            }
+
+            100% {
+                transform: translateX(1900px);
+            }
+
+        }
+
+        @keyframes wrong {
+            0%{
+                transform: translateX(1900px);
+            }
+            100%{
+                transform: translateX(-500px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <img class="common car1" src="./assets/right.png" alt="car1">
+        <img class="common car2" src="./assets/wrong.png" alt="car1">
+        <img class="common car3" src="./assets/right.png" alt="car1">
+        <img class="common car4" src="./assets/wrong.png" alt="car1">
+        <img class="common car5" src="./assets/right.png" alt="car1">
+        <img class="common car6" src="./assets/wrong.png" alt="car1">
+        <img class="common car7" src="./assets/right.png" alt="car1">
+        <img class="common car8" src="./assets/wrong.png" alt="car1">
+    </div>
+</body>
+
+</html>
